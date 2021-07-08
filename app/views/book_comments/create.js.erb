@@ -1,3 +1,4 @@
-$("#comments_area").html("<%= j(render 'book_comments/book_comment',  book: @book, book_comment: @book_comment ) %>")
+$(".book_comments").html("<%= j(render 'book_comments/book_comment', book: @book) %>");
+<!--$("#comments_area").html("<%# j(render 'book_comments/book_comment',  book: @book, book_comment: @book_comment ) %>")-->
 <!--$('.book_comment').append("<td class='book_comment'><%# @book_comment.comment %></td>");-->
 $('.js-form')[0].reset();

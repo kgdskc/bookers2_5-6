@@ -32,8 +32,9 @@
             <h2>Comment</h2>
           </td>
         </tr>
-        
-        <%= render 'book_comments/book_comment', book: @book, book_comment: @book_comment %>
+        <table class="book_comments">
+          <%= render 'book_comments/book_comment', book: @book %>
+        </table>
       </table>
       <%= form_with(model:[@book, @book_comment], class: 'js-form') do |f| %>
         <%= f.text_area :comment, rows:'5' %>
